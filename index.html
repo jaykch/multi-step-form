@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png"/>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+    <title>Acquirely Task</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet"/>
+
+    <!-- Fonts and Icons -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="image-container set-full-height" style="background:#42babc">
+
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <!--      Wizard container        -->
+                <div class="wizard-container">
+                    <div class="card wizard-card" data-color="red" id="wizard">
+                        <form action="submitted.html" method="">
+                            <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
+
+                            <!--<div class="wizard-header">-->
+                            <!--<h3 class="wizard-title">List your place</h3>-->
+                            <!--<p class="category">This information will let us know more about your place.</p>-->
+                            <!--</div>-->
+                            <div class="wizard-navigation">
+                                <div class="progress-with-circle">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                                         aria-valuemax="4" style="width: 15%;"></div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#location" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-location-pin"></i>
+                                            </div>
+                                            Location
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#energy" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-bolt"></i>
+                                            </div>
+                                            Energy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#health" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-heart"></i>
+                                            </div>
+                                            Health
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#details" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-user"></i>
+                                            </div>
+                                            Details
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="location">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> Would you like to do the same?</h4>
+                                        </div>
+
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <div class="form-group">
+                                                <label class="control-label">State
+                                                    <small>(required)</small>
+                                                </label>
+                                                <select title="Please enter your state!" name="state"
+                                                        class="form-control">
+                                                    <option disabled="" selected="">My state is...</option>
+                                                    <option value="New South Wales"> New South Wales</option>
+                                                    <option value="Victoria"> Victoria</option>
+                                                    <option value="Queensland"> Queensland</option>
+                                                    <option value="South Australia"> South Australia</option>
+                                                    <option value="Australian Capitol Territory"> Australian Capitol
+                                                        Territory
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="info-text"> Takes less than 2 min, and is 100% free!</h5>
+
+                                </div>
+                                <div class="tab-pane" id="energy">
+                                    <h4 class="info-text">It's our mission to save all Aussies through their Energy and
+                                        Health Insurance on average $725* per year</h4>
+                                    <h5 class="info-text">Which energy service can we help save you money on? </br>
+                                        <small>Both are selected by default*</small>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <div class="choice active" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="energy" value="Design"
+                                                           checked="checked">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-bolt"></i>
+                                                        <p>Energy</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="choice active" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="gas" value="Design" checked="checked">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-package"></i>
+                                                        <p>Gas</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="tab-pane" id="health">
+                                    <h5 class="info-text">Who do you want your health insurance to cover?</h5>
+                                    <div class="row">
+                                        <div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice active" data-toggle="wizard-radio">
+                                                    <input type="radio" name="family" value="Design" checked="checked">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layers-alt"></i>
+                                                        <p>Family</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio">
+                                                    <input type="radio" name="singleParent" value="Design">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layers"></i>
+                                                        <p>Single Parent</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio">
+                                                    <input type="radio" name="single" value="Design">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-user"></i>
+                                                        <p>Single</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-radio">
+                                                    <input type="radio" name="couple" value="Design">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-heart"></i>
+                                                        <p>Couple</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <h5 class="info-text">Your current health fund provider</h5>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <div id="health-selector" class="form-group">
+                                                <label class="control-label"></label>
+                                                <select title="Please enter your health fund provider!"
+                                                        name="healthProvider"
+                                                        class="form-control">
+                                                    <option disabled="" selected="">Select your current health fund
+                                                        provider
+                                                    </option>
+                                                    <option value="Not Insured">Not Insured</option>
+                                                    <option value="ACA Health Benefits Fund">ACA Health Benefits Fund
+                                                    </option>
+                                                    <option value="AHM health insurance">AHM health insurance</option>
+                                                    <option value="Allianz Overseas Student Health Cover">Allianz
+                                                        Overseas Student Health Cover
+                                                    </option>
+                                                    <option value="Apia health insurance">Apia health insurance</option>
+                                                    <option value="Australian Unity Health Limited">Australian Unity
+                                                        Health Limited
+                                                    </option>
+                                                    <option value="Bupa">Bupa</option>
+                                                    <option value="CBHS Health Fund Limited">CBHS Health Fund Limited
+                                                    </option>
+                                                    <option value="Cessnock District Health Fund">Cessnock District
+                                                        Health Fund
+                                                    </option>
+                                                    <option value="CUA Health Limited">CUA Health Limited</option>
+                                                    <option value="Defence Health Limited">Defence Health Limited
+                                                    </option>
+                                                    <option value="Doctors Health Fund">Doctors Health Fund</option>
+                                                    <option value="Emergency Services Health">Emergency Services
+                                                        Health
+                                                    </option>
+                                                    <option value="Frank Health Insurance">Frank Health Insurance
+                                                    </option>
+                                                    <option value="GMF">GMF</option>
+                                                    <option value="GMHBA Limited">GMHBA Limited</option>
+                                                    <option value="Grand United Corporate Health">Grand United Corporate
+                                                        Health
+                                                    </option>
+                                                    <option value="HBA">HBA</option>
+                                                    <option value="HBF Health Limited">HBF Health Limited</option>
+                                                    <option value="HCF">HCF</option>
+                                                    <option value="Health Care Insurance Limited">Health Care Insurance
+                                                        Limited
+                                                    </option>
+                                                    <option value="HIF">HIF</option>
+                                                    <option value="Health Partners">Health Partners</option>
+                                                    <option value="health.com.au">health.com.au</option>
+                                                    <option value="IMAN Health Cover">IMAN Health Cover</option>
+                                                    <option value="Latrobe Health Services">Latrobe Health Services
+                                                    </option>
+                                                    <option value="Medibank Private Limited">Medibank Private Limited
+                                                    </option>
+                                                    <option value="Mildura Health Fund">Mildura Health Fund</option>
+                                                    <option value="MyOwn">MyOwn</option>
+                                                    <option value="Navy Health">Navy Health</option>
+                                                    <option value="NIB Health Funds Ltd">NIB Health Funds Ltd</option>
+                                                    <option value="Nurses &amp; Midwives Health">Nurses &amp; Midwives
+                                                        Health
+                                                    </option>
+                                                    <option value="Onemedifund">Onemedifund</option>
+                                                    <option value="Peoplecare Health Insurance">Peoplecare Health
+                                                        Insurance
+                                                    </option>
+                                                    <option value="Phoenix Health Fund Limited">Phoenix Health Fund
+                                                        Limited
+                                                    </option>
+                                                    <option value="Police Health">Police Health</option>
+                                                    <option value="Qantas Assure">Qantas Assure</option>
+                                                    <option value="Queensland Country Health Fund Ltd">Queensland
+                                                        Country Health Fund Ltd
+                                                    </option>
+                                                    <option value="RT Health fund">RT Health fund</option>
+                                                    <option value="Reserve Bank Health Society Ltd">Reserve Bank Health
+                                                        Society Ltd
+                                                    </option>
+                                                    <option value="St.Lukes Health">St.Lukes Health</option>
+                                                    <option value="Teachers Health">Teachers Health</option>
+                                                    <option value="Transport Health Pty Ltd">Transport Health Pty Ltd
+                                                    </option>
+                                                    <option value="TUH">TUH</option>
+                                                    <option value="UniHealth">UniHealth</option>
+                                                    <option value="Westfund Limited">Westfund Limited</option>
+                                                    <option value="Other">Other</option>
+                                                    <option value="I Don't Know">I Don't Know</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="info-text">Or</h5>
+                                    <br>
+                                    <div class="row healthcare-buttons">
+                                        <button id="nib" type="button" class="btn btn-primary ">NIB</button>
+                                        <button id="medibank" type="button" class="btn btn-primary ">Medibank
+                                        </button>
+                                        <button id="hcf" type="button" class="btn btn-primary ">HCF Limited
+                                        </button>
+                                    </div>
+                                    <div class="row healthcare-buttons">
+                                        <button id="hbf" type="button" class="btn btn-primary ">HBF</button>
+                                        <button id="bupa" type="button" class="btn btn-primary ">BUPA</button>
+                                        <button id="teachers" type="button" class="btn btn-primary ">Teachers
+                                            Federation
+                                        </button>
+                                    </div>
+                                    <div class="hospital-cover">
+                                        <h5 class="info-text">What general extras do you wish to have?</h5>
+                                        <br>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="private" id="private" class="checkbox"
+                                                       checked="checked">
+                                                <label class="checkbox" for="private">Private Hospital</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="birth" id="birth" class="checkbox">
+                                                <label class="checkbox" for="birth">Pregnancy &amp; Birth
+                                                    Related</label>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="heart" id="heart" class="checkbox">
+                                                <label class="checkbox" for="heart">Heart Surgery</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="ambulance" id="ambulance" class="checkbox">
+                                                <label class="checkbox" for="ambulance">Ambulance Cover</label>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="psychiatric" id="psychiatric"
+                                                       class="checkbox">
+                                                <label class="checkbox" for="psychiatric">Psychiatric Services</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="rehab" id="rehab" class="checkbox">
+                                                <label class="checkbox" for="rehab">Rehabilitation</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="extras">
+                                        <h5 class="info-text">What hospital cover do you wish to have?</h5>
+                                        <br>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="dental" id="dental" class="checkbox"
+                                                       checked="checked">
+                                                <label class="checkbox" for="dental">General Dental</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="dentalMajor" id="dentalMajor"
+                                                       class="checkbox">
+                                                <label class="checkbox" for="dentalMajor">Major Dental</label>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="endodontic" id="endodontic"
+                                                       class="checkbox">
+                                                <label class="checkbox" for="endodontic">Endodontic</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="optical" id="optical" class="checkbox">
+                                                <label class="checkbox" for="optical">Optical</label>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <input type="checkbox" name="physiotherapy" id="physiotherapy"
+                                                       class="checkbox">
+                                                <label class="checkbox" for="physiotherapy">Physiotherapy</label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="checkbox" name="hearing" id="hearing" class="checkbox">
+                                                <label class="checkbox" for="hearing">Hearing Aids</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="tab-pane" id="details">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4>This is the last step!</h4>
+                                            <p>In order to save you your time and money we need a few basic details so
+                                                that our Energy and Health Insurance partners can get started on helping
+                                                you to move to your best possible policy.</p>
+                                            </br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>First Name
+                                                    <small>(required)</small>
+                                                </label>
+                                                <input name="firstname" type="text" class="form-control"
+                                                       placeholder="Jane">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Last Name
+                                                    <small>(required)</small>
+                                                </label>
+                                                <input name="lastname" type="text" class="form-control"
+                                                       placeholder="Doe">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Email
+                                                    <small>(required)</small>
+                                                </label>
+                                                <input name="email" type="email" class="form-control"
+                                                       placeholder="example@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Mobile Number
+                                                    <small>(required)</small>
+                                                </label>
+                                                <input name="number" type="tel" class="form-control"
+                                                       placeholder="Please enter your phone number">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">When is a good time to contact you?
+                                                    <small>(required)</small>
+                                                </label>
+                                                <select title="Please enter a time that is suitable." name="contactTime"
+                                                        class="form-control">
+                                                    <option disabled="" selected="">Best time to contact</option>
+                                                    <option value="9 - 11am">9 - 11am</option>
+                                                    <option value="11 - 1pm">11 - 1pm</option>
+                                                    <option value="1 - 3pm">1 - 3pm</option>
+                                                    <option value="3 - 6pm">3 - 6pm</option>
+                                                    <option value="6 - 8pm">6 - 8pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div id="myDropdown" class="form-group">
+                                                <label>Postcode
+                                                    <small>(required)</small>
+                                                </label>
+                                                <input id="myInput" name="postcode" type="text" class="form-control"
+                                                       placeholder="Please enter your post code"
+                                                       title="Postcode is a required field."
+                                                       onkeyup="filterFunction()">
+                                                <div class="dropdown-content">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            </br>
+                                            <input type="checkbox" name="disclaimer" id="disclaimer" class="checkbox"
+                                                   onclick="checkDisclaimer()">
+                                            <label class="checkbox disclaimer" for="disclaimer">
+                                                <small>
+                                                    I agree and understand that I will be taking up to 2 phone calls
+                                                    from Billy Sumo's team consisting of talking to a Health Insurance
+                                                    savings expert from Members Own, and an energy expert from Compare &
+                                                    Connect. Please note that Residential Connections Pty Ltd, Compare &
+                                                    Connect trusted energy partner, may call during the call centre
+                                                    opening hours and email or text me to discuss my energy needs. (Call
+                                                    Centre Hours are Mon - Thurs 9am - 8pm, Fri 9am - 7pm, and Sat 10am
+                                                    - 5pm AEDT). In submitting this form you understand and agree to our
+                                                    T&C's and Privacy Statements.
+                                                </small>
+                                                </br>
+                                                </br>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-footer">
+                                <div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next'
+                                           value='Next'/>
+                                    <button id="finish" type="submit" class='btn btn-finish btn-fill btn-danger btn-wd'
+                                            name='finish' value='Finish' disabled>Finish
+                                    </button>
+                                </div>
+
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-default btn-wd' name='previous'
+                                           value='Previous'/>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- wizard container -->
+            </div>
+        </div> <!-- row -->
+    </div> <!--  big container -->
+</div>
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/demo.js" type="text/javascript"></script>
+<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+</html>
